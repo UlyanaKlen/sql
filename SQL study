@@ -1,0 +1,32 @@
+/*Таблица «Увольнения» */
+CREATE TABLE Увольнения  /*Это 4 таблица, сделанная мной*/ 
+(
+[Код Увольнения] COUNTER CONSTRAINT PrimaryKey 
+PRIMARY KEY, /*Кодовое слово*/ 
+[Дата] DATE NOT NULL, /*Ввод дата*/ 
+[Должность] SMALLINT NOT NULL, /*Ввод цифр*/ 
+[Соискатель] SMALLINT NOT NULL, /*Ввод цифр*/ 
+[№ приказа] INT NOT NULL /*Ввод цифр*/ 
+);
+/*Таблица «Соискатели» */
+CREATE TABLE Соискатели /*Это 2 таблица, сделанная мной*/
+(
+[Код Соискателя] COUNTER CONSTRAINT PrimaryKey 
+PRIMARY KEY, /*Кодовое слово*/ 
+[Фамилия] TEXT NOT NULL, /*Ввод текста*/ 
+[Имя] TEXT NOT NULL, /*Ввод текста*/ 
+[Отчество] TEXT NOT NULL, /*Ввод текста*/ 
+[Пол] TEXT NOT NULL, /*Ввод текста*/ 
+[Образование] TEXT NOT NULL, /*Ввод текста*/ 
+[Место жительства] TEXT NOT NULL, /*Ввод текста*/ 
+[Номер телефона] INT NOT NULL, /*Ввод цифр*/
+[Серия паспорта] INT NOT NULL, /*Ввод цифр*/ 
+[Номер паспорта] INT NOT NULL, /*Ввод цифр*/ 
+[Кем выдан паспорт] TEXT NOT NULL /*Ввод текста*/ 
+);
+/* Таблица «Должность»*/
+CREATE TABLE Должность /*Это 3 таблица, сделанная мной*/ 
+[[Код Должности] COUNTER CONSTRAINT PrimaryKey
+PRIMARY KEY, /*Кодовое слово*/ 
+[Наименование] TEXT NOT NULL /*Ввод текста*/
+);
